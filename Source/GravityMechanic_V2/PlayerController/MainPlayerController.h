@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "../Portals/Portal.h"
 #include "../Portals/PortalManager.h"
 #include "GameFramework/PlayerController.h"
 #include "MainPlayerController.generated.h"
@@ -21,14 +20,14 @@ public:
 	FMatrix GetCameraProjectionMatrix();
 
 	 //Portal class to spawn 
-	 UPROPERTY(EditDefaultsOnly, Category = Portal)
-	 TSubclassOf<class APortal> PortalClass;
-	
-	 //Portal manager class to spawn 
-	 UPROPERTY(EditDefaultsOnly, Category = Portal)
-	 TSubclassOf<class APortalManager> PortalManagerClass;
-		
-	APortalManager* PortalManager;
+	// UPROPERTY(EditDefaultsOnly, Category = Portal)
+	// TSubclassOf<class APortal> PortalClass;
+	//
+	// //Portal manager class to spawn 
+	// UPROPERTY(EditDefaultsOnly, Category = Portal)
+	// TSubclassOf<class APortalManager> PortalManagerClass;
+	//	
+	//APortalManager* PortalManager;
 
 	class ALiminalPortalManager* LiminalPortalManager;
 	

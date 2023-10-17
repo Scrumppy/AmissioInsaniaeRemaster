@@ -77,9 +77,8 @@ public:
 
 	UFUNCTION(BlueprintPure)
 	FORCEINLINE float GetDefaultGravity() const { return DefaultGravity; }
-private:
-
-	UPROPERTY(EditAnywhere, Category = "Variables")
+	
+	UPROPERTY(BlueprintReadWrite, Category = "Variables")
 	float DefaultGravity;
 
 };

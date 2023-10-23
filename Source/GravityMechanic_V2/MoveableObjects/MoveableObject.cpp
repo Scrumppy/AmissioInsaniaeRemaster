@@ -51,7 +51,7 @@ void AMoveableObject::CustomTickPhysics(FVector TargetVelocity)
 		if (bBeingGrabbed)
 		{
 			float VectorLengthSquared = UKismetMathLibrary::VSizeSquared(GetVelocity());
-			bool bCondition = UKismetMathLibrary::Greater_FloatFloat(VectorLengthSquared, MaxVelocitySquared);
+  			bool bCondition = (VectorLengthSquared > MaxVelocitySquared);
 			
 			if (!bCondition)
 			{

@@ -2,7 +2,7 @@
 
 
 #include "MainPlayerController.h"
-#include "C:\UE5_Projects\AmissioInsaniaeRemaster\Source\GravityMechanic_V2\Portals\Portal.h"
+#include "../Source/GravityMechanic_V2/Portals/Portal.h"
 #include "../Portals/PortalManager.h"
 
 void AMainPlayerController::BeginPlay()
